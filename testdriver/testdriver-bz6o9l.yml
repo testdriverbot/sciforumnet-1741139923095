@@ -1,0 +1,31 @@
+version: 4.2.12
+session: 67c7b0ce9c88094147b0486d
+steps:
+  - prompt: >-
+      login with username "distorchen+test@gmail.com" and password
+      "Password123!"
+    commands:
+      - command: hover-text
+        text: Log In
+        description: login link in the top right of the header
+        action: click
+  - prompt: >-
+      login with username "distorchen+test@gmail.com" and password
+      "Password123!"
+    commands:
+      - command: hover-text
+        text: E-mail address
+        description: email input field on the login page
+        action: click
+      - command: type
+        text: distorchen+test@gmail.com
+      - command: hover-text
+        text: Password
+        description: password input field on the login page
+        action: click
+      - command: type
+        text: Password123!
+      - command: hover-text
+        text: Continue
+        description: continue button on the login page
+        action: click
